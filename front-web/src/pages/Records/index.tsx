@@ -4,7 +4,7 @@ import axios from 'axios';
 import { RecordsResponse } from './types';
 import {formatDate} from './helpers';
 import Pagination from './Pagination';
-import {Link} from 'react-router-dom';
+import Filters from '../../components/Filter';
 
 
 const BASEURL = 'http://localhost:8080'
@@ -31,18 +31,8 @@ const handlePageChange =(index:number) => {
 return (
 
     <div className="page-container">
-        <div className="filters-container records-actions">
-
-        <Link to="/charts">
-
-            <button className="action-filters">
-VER GRAFICOS
-
-            </button>
-
-        </Link>
-
-        </div>
+        <Filters link="/charts" linkText="VER GRAFICO"/>
+        
         <table className="records-table" cellPadding="0" cellSpacing="0">
             <thead>
                 <tr>
