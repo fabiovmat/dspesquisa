@@ -25,7 +25,7 @@ const initialPieData = {
 
 }
 
-const BASEURL = 'http://localhost:8080'
+const BASEURL = 'https://sds1-matt.herokuapp.com';
 
 const Charts = () => {
 
